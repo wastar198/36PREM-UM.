@@ -192,8 +192,7 @@
             })
             .then(response => response.json())
             .then(data => {
-                // Email notification logic (handled by backend)
-                alert("Siparişiniz alınmıştır!");
+                bildirimGoster("Siparişiniz alınmıştır!");
                 sepet = {};
                 guncelleSepetSayisi();
                 document.getElementById('sepet').style.display = "none";
@@ -201,6 +200,19 @@
             })
             .catch(error => {
                 console.error('Hata:', error);
+            });
+
+            // Email notification
+            fetch('https://your-email-api.com/send-email', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    to: 'aliihsantopkaya36@gmail.com',
+                    subject: 'Yeni Sipariş',
+                    text: `Adres: ${adres}\nSipariş: ${JSON.stringify(sepet)}`
+                }),
             });
         }
     </script>
@@ -258,7 +270,7 @@
         <h2>Hakkında</h2>
         <p>Her zaman kalite ve estetik.</p>
         <h2>İletişim Bilgileri</h2>
-        <p>Email: <a href="mailto:Udenhalil@gmail.com" style="color: white;">Udenhalil@gmail.com</a></p>
+        <p>Email: <a href="mailto:aliihsantopkaya36@gmail.com" style="color: white;">aliihsantopkaya36@gmail.com</a></p>
         <p>Telefon: +90 0505 291 41 36</p>
         <p>Tüm hakları saklıdır.</p>
     </footer>
