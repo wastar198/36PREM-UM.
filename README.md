@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+
+         <!DOCTYPE html>
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
@@ -54,11 +55,7 @@
             right: 20px;
             cursor: pointer;
             color: white;
-            border: none;
             padding: 10px;
-            margin-top: 10px;
-            cursor: pointer;
-            border-radius:
         }
         footer {
             text-align: center;
@@ -199,7 +196,6 @@
             .then(response => response.json())
             .then(data => {
                 alert("Siparişiniz alınmıştır!");
-}
                 sepet = {};
                 guncelleSepetSayisi();
                 document.getElementById('sepet').style.display = "none";
@@ -234,44 +230,4 @@
         <div class="ilan">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ6kG9ydQfL24BVC8QIyvG_AkE5LEIhiY9tpliqM_3VxEzwbreETitOTmRN5Lx191ltaU&usqp=CAU" alt="Burberry">
             <p class="fiyat">Burberry: 650 TL</p>
-            <button class="sepet-button" onclick="sepetEkle('Burberry', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ6kG9ydQfL24BVC8QIyvG_AkE5LEIhiY9tpliqM_3VxEzwbreETitOTmRN5Lx191ltaU&usqp=CAU')">Sepete Ekle</button>
-        </div>
-        <div class="ilan">
-            <img src="https://i0.wp.com/revantevip.com/wp-content/uploads/2024/09/IMG_5334-scaled.jpeg?fit=500%2C667&ssl=1" alt="Calvin Klein Jeans">
-            <p class="fiyat">Calvin Klein Jeans: 650 TL</p>
-            <button class="sepet-button" onclick="sepetEkle('Calvin Klein Jeans', 'https://i0.wp.com/revantevip.com/wp-content/uploads/2024/09/IMG_5334-scaled.jpeg?fit=500%2C667&ssl=1')">Sepete Ekle</button>
-        </div>
-        <div class="ilan">
-            <img src="https://r.resimlink.com/CVWHk-wJLyD.jpg" alt="Lacoste">
-            <p class="fiyat">Lacoste: 650 TL</p>
-            <button class="sepet-button" onclick="sepetEkle('Lacoste', 'https://r.resimlink.com/CVWHk-wJLyD.jpg')">Sepete Ekle</button>
-        </div>
-        <div class="ilan">
-            <img src="https://r.resimlink.com/V-9B3.jpg" alt="Gucci">
-            <p class="fiyat">Gucci: 650 TL</p>
-            <button class="sepet-button" onclick="sepetEkle('Gucci', 'https://r.resimlink.com/V-9B3.jpg')">Sepete Ekle</button>
-        </div>
-    </div>
-
-    <div id="siparis-formu" style="display: none;">
-        <h2>Sipariş Formu</h2>
-        <label for="adres">Adres-Telefon Numarası ve Tc:</label>
-        <input type="text" id="adres" required>
-        <button onclick="siparisEt()">Sipariş Et</button>
-    </div>
-
-    <footer>
-        <h2>Hakkında</h2>
-        <p>Her zaman kalite ve estetik.</p>
-        <h2>İletişim Bilgileri</h2>
-        <p>Email: <a href="mailto:Udenhalil@gmail.com" style="color: white;">Udenhalil@gmail.com</a></p>
-        <p>Telefon: +90 0505 291 41 36</p>
-        <p>Tüm hakları saklıdır.</p>
-    </footer>
-
-    <a href="https://www.instagram.com/36.premium?igsh=MXVmN2RpNW1zNTAyeQ==" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" class="instagram-logo" alt="Instagram">
-    </a>
-
-</body>
-</html>
+            <button class="sepet-button" onclick="sepetEkle('Burberry', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ6kG9ydQfL24BVC8QIyvG_AkE5LEIhiY9tpliqM_3VxEzwbreETitOTm
